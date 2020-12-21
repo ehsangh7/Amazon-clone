@@ -3,22 +3,22 @@ import "../styles/Product.css"
 import StarIcon from '@material-ui/icons/Star';
 
 
-const Product = () => {
+const Product = ({title, image, price, rating}) => {
     return (
         <div className="product">
             <div className="product__info">
-                <p>the Learn startup</p>
+                <p>{title}</p>
                 <p className="product__price">
                     <small>$</small>
-                    <strong>19.99</strong>
+                    <strong>{price}</strong>
                 </p>
                 <div className="product__rating">
-                    <StarIcon />
-                    <StarIcon />
-                    <StarIcon />
+                    {Array(rating).fill().map((_, i) => (
+                        <StarIcon />
+                    ))}
                 </div>
                 <img 
-                    src="http://images.amazon.com/images/P/0596004613.01._PE30_PI_SCMZZZZZZZ_.jpg" 
+                    src={image}
                     alt=""/>
             
                 <button>ADD</button>
