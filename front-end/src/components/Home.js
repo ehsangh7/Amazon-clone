@@ -49,12 +49,14 @@ const Home = () => {
                 <img className="home__image" src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2020/HolidayDeals/Desktop/Fuji_TallHero_HolidayDeals_en_US_1x._CB414278668_.jpg" alt=""/>
                 <div className="home__row">
                     <Product 
+                        id={products.product1.id}
                         title={products.product1.title} 
                         price={products.product1.price} 
                         image={products.product1.image}
                         rating={products.product1.rating}
                     />
                     <Product 
+                        id={products.product2.id}
                         title={products.product2.title} 
                         price={products.product2.price} 
                         image={products.product2.image}
@@ -62,18 +64,21 @@ const Home = () => {
                 </div>
                 <div className="home__row">
                     <Product 
+                        id={products.product3.id}
                         title={products.product3.title} 
                         price={products.product3.price} 
                         image={products.product3.image}
                         rating={products.product3.rating}
                         />
                     <Product 
+                        id={products.product4.id}
                         title={products.product4.title} 
                         price={products.product4.price} 
                         image={products.product4.image}
                         rating={products.product4.rating}
                     />
                     <Product 
+                        id={products.product5.id}
                         title={products.product5.title} 
                         price={products.product5.price} 
                         image={products.product5.image}
