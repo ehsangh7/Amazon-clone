@@ -33,9 +33,5 @@
   border: none;
   border-radius: 3px;
   color: #111;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: flex-end;
-          flex-direction: flex-end;
 }
 /*# sourceMappingURL=CheckoutProduct.css.map */
